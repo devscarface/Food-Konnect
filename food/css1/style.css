@@ -1,0 +1,77 @@
+
+.testimonial{
+    text-align: justify;
+}
+
+.testimonial h1{
+    text-align: center;
+    color: black;
+ }
+
+ .testing{
+    float: left;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+}
+ 
+.test-image{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 15%;
+    border-radius: 100%;
+ }
+ 
+ #first{
+    border: 0.5em black solid;
+    text-align: left;
+    padding: 3px;
+    margin: 5px;
+    width: 25%;
+
+ }
+ #second{
+    border: 0.5em black solid;
+    text-align: left;
+    padding: 3px;
+    margin: 5px; 
+    width: 25%;
+ }
+ #third{
+    border: 0.5em black solid;
+    text-align: left;
+    padding: 3px;
+    margin: 5px;
+    width: 25%;
+ }
+ #forth{
+    border: 0.5em black solid;
+    text-align: left;
+    width: 25%;
+ }
+.foot{
+    text-align: center;
+    background-color: orange;
+    font-size: 15pxs;
+
+}
+
+ .twit{
+    text-decoration: none;
+    color: blue;
+}
+.face{
+    text-decoration: none;
+    color: red;
+}
+.web{
+    text-decoration: none;
+    color: green;
+}
+footer{
+    padding: 13px;
+}
+
