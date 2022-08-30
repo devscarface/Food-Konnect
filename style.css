@@ -1,0 +1,124 @@
+body,
+html {
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+.container1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 10px;
+    background-color: #f0f3f7;
+   
+}
+img.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.navbar{
+    padding-top: 10px;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+a{
+    margin: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: unset;
+    padding: .5rem 1.5rem;
+}
+.sign{
+    margin-left: 30px;
+}
+a:hover{
+    border-width: 50%;
+    border-radius: 1rem;
+    color: white;
+    background-color: orangered;
+}
+.navbar.active{
+    border-width: 50%;
+    border-radius: 1rem;
+    color: white;
+    background-color: orangered;
+}
+.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img-fixed {
+    background-attachment: fixed;
+}
+
+/*.container2 {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}*/
+
+
+section {
+    padding: 5rem 0;
+}
+
+.slogan {
+    text-align:justify;
+    padding-left: 90px;
+}
+
+.slogan h1 {
+    font-size: 6rem;
+    color: orangered;
+}
+.left-to-right{
+    padding-right: 50%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.slogan button {
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    background-color: white;
+    border: .125rem solid orangered;
+    border-radius: 1rem;
+    color:orangered;
+    margin: 2rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.slogan button:hover {
+    background-color: orangered;
+    color: white;
+}
