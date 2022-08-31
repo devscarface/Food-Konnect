@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/con.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="images/logo.jpg" alt=""  style="float:left;">
+       <div id="menubar" style="float:right">
+      <img src="images/menubar.png" alt="">
+    </div>
+        <nav class="navbar" style="float:right;">
+        
+            <a href="index.html">Home</a></li>
+            <a href="services.html">Services</a>
+            <a href="menu.html">Menu</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="order.html">Order Now</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            
+        </nav>
+    </header>
+    <div class="heading">
+        <h1>Our<span> Services</span></h1>
+    </div>
+   <section class="services">
+            <aside class="ourservices">
+                <ul>
+                    <li>Local and Intercontinental Dishes</li>
+                    <li>Indoor and outdoor Catering Services</li>
+                    <li>Events Feeding and Decoration</li>
+                    <li>Home Delivery within Jos-Bukuru metropolois</li>
+                    <li>Free and Fast Delivery</li>
+                    <li>All the types of Spices</li>
+                </ul>
+
+
+            </aside>
+
+            <article class="slide">
+                <script>
+                    var i=0;
+                    var images=[];
+                    var time=3000;
+
+                    //image name and location
+
+                    images[0]='images/service.jpg';
+                    images[1]='images/service1.jpg';
+                    images[2]='images/service2.jpg';
+                    images[3]='images/service3.jpg';
+                    images[4]='images/service4.jpg';
+                    images[5]='images/service5.jpg';
+                    images[6]='images/service6.jpg';
+                    images[7]='images/service7.jpg';
+                    images[8]='images/service8.jpg';
+                    images[9]='images/service9.jpg';
+                    images[10]='images/service10.jpg';
+                    images[11]='images/service11.jpg';
+
+                    //change image
+                    function changeimg(){
+                        document.slideshow.src=images[i];
+
+                        if (i< images.length - 1) {
+                            i++;
+
+                        }else{
+                            i=0;
+                        }
+
+                        setTimeout("changeimg()", time);
+                    }
+                    window.onload = changeimg;
+
+                </script>
+
+                <img name="slideshow" width="700" height="300" alt="Some of our services at foodKonnect">
+
+            </article>
+
+
+
+   </section>
+             
+            <section class="footer">
+                <div class="share">
+                    <a href="#" class="btn">Facebook</a>
+                    <a href="#" class="btn">Twitter</a>
+                    <a href="#" class="btn">Instagram</a>
+                    <a href="#" class="btn">Github</a>
+                    <a href="#" class="btn">Pinterest</a>
+                    <a href="#" class="btn">linkedin</a>
+                </div>
+        
+                <h1 class="credit">Created by <span>Group 3</span> | all right reserved</h1>
+        
+        
+            </section>
+
+
+
+    
+</body>
+</html>

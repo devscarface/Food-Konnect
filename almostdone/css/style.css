@@ -1,0 +1,256 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;   padding: 0;
+    box-sizing: border-box;
+    outline: none;  border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background-color: rgb(160, 51, 51);
+    color: aliceblue;
+
+}
+a {
+    color :black;
+
+}
+a:hover{
+    color:red;
+}
+
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+header{
+ 
+    top:0;  left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    padding: 2rem 9%;
+    border: solid 1px rgb(238, 231, 231);
+    border-radius: 30px; 
+    float:right;
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px;
+
+
+
+
+}
+ header nav img{
+   
+   margin-left: 2px;
+   margin-right: 50%;
+   
+   float: left;
+ }
+
+ header nav{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+    text-align: center;
+ }
+
+ header nav a{
+    font-size: 2rem;
+    padding-right: 25px;
+    
+ }
+ #menubar{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    margin: 10px;
+    display: none;
+}
+
+.mainsection{
+   margin: 10px;   margin-top: 20px;
+}
+.mainsection article{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    width: 100%;
+}
+.mainsection article .pics{
+    flex:1 1 25rem;
+    gap:1.5rem;
+    border-radius: .5rem;
+    padding: 40px;  padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgb(192, 187, 187);
+    cursor: pointer;
+
+}
+.mainsection article .pics figcaption{
+    margin: auto;
+    text-align: center;
+    color:rgb(28, 136, 60);
+}
+.mainsection article .pics figcaption h3{
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.services aside{
+    flex: 1 1 40rem;
+    margin-left:40px;
+}
+.services aside ul{
+    color: #333;
+    padding: 3px;
+    font-size: 2.5rem;
+}
+.services aside ul li{
+    margin-bottom:11px;
+}
+.services article img{
+    font-size: 3rem;
+    background-color: #f7f7f7;
+    color: #666;
+    border: solid 1px #333;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+}
+
+.logoabout{
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    padding: 3rem;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about .wee{
+    flex: 1 1 40rem;
+    color: #333;
+    font-size: 2rem;
+    padding: 10px;
+}
+.about .wee h1{
+    color:red;
+    text-align: center;
+}
+.about .wee p{
+    padding: 1rem;
+}
+.about .image img{
+    border: #333 solid 1px;
+    border-radius: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .con{
+    flex: 1 1 40rem;
+    font-size: 3rem;
+    text-align: justify;
+   
+}
+.contact .con ul li img{
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    border:solid 4px red;
+    margin: 2px;
+    margin-right: 5px;
+}
+.contact .con ul li{
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact .image img{
+    height: 50rem;
+    border-radius: 20px;
+    
+}
+.footer{
+    position: relative;
+}
+
+
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+    #menubar{
+        display: initial;
+    } 
+
+    header nav{
+        position: absolute;
+        top:100%;   left:0; right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0,0,0,.1); 
+        clip-path: polygon(0 0, 100% 0, 0 0);
+        
+    }
+
+    header .navbar .active{
+        clip-path: polygon(0 0, 100% 0,100% 100%, 0% 100%);
+    }
+
+
+    header nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display:block;
+        border-left:.5rem solid var(--red);
+        background: #fff;
+        border: .2rem solid rgba(0,0,0,.1);
+        border-left: .5rem solid red;
+    }
+}
+
+ @media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+ }
