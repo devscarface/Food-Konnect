@@ -179,6 +179,9 @@ header{
     text-align: justify;
    
 }
+.contact .con ul{
+    list-style-type: none;
+}
 .contact .con ul li img{
     width: 5%;
     height: 5%;
@@ -196,6 +199,7 @@ header{
 .contact .image img{
     height: 50rem;
     border-radius: 20px;
+    width: 90%;
     
 }
 .footer{

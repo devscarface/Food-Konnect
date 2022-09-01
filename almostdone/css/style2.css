@@ -5,7 +5,8 @@
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position:50%;
+
 }
 .home{
     padding: 3px;
@@ -103,10 +104,10 @@
     margin-top: 50px; 
     width: 90%;
     padding: 7rem;
-    border-radius: 100%;
     text-align: center;
     font-size:7rem;
-    line-height: 10rem;
+    line-height: 13rem;
+   color: aliceblue;
 
   
 }
@@ -159,6 +160,7 @@
 .homeall .natural .naturecontent p{
     font-size: 2rem;
     margin-bottom: 20px;
+    color: rgb(8, 8, 8)
 } 
 .homeall .natural .naturecontent ul{
     margin-left: 40px;
